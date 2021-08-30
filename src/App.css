@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+html, body {
+  background-color: #f3f3f3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
