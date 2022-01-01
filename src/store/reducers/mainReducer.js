@@ -11,7 +11,7 @@ const initialState = {
 //// Все action'ы
 
 // Загрузка всех todo при старте страницы
-const startLoadAction = dispatch => fetch('http://jsonplaceholder.typicode.com/todos?_limit=13')
+const startLoadAction = dispatch => fetch('https://jsonplaceholder.typicode.com/todos?_limit=13')
         .then(res => res.json())
         .then(json => json.map((item, index) => ({ ...item, id: index, isFavourite: false })))
         .then(json => dispatch({ type: 'START_LOAD', data: json }))
